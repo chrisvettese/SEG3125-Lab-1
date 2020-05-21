@@ -7,8 +7,10 @@
 <body>
 <div>
     <h1>Website Survey on Amazon</h1>
+	View the website here:
     <a href="https://www.amazon.ca/">
         amazon.ca
+		<br><br>
         <img src="images/amazon.PNG" alt="Amazon Website"/>
     </a>
 </div>
@@ -40,6 +42,28 @@
 		<option value="unsure">Unsure</option>
 	</select>
 	<br><br>
+
+	Please select one or more words that you would use to describe the UI of Amazon.ca:
+	<br>
+	<input type="checkbox" id="confusing" name="confusing" value="confusing">
+	<label for="confusing">Confusing</label><br>
+	<input type="checkbox" id="simple" name="simple" value="simple">
+	<label for="simple">Simple</label><br>
+	<input type="checkbox" id="inefficient" name="inefficient" value="inefficient">
+	<label for="inefficient">Inefficient</label><br>
+	<input type="checkbox" id="appealing" name="appealing" value="appealing">
+	<label for="appealing">Appealing</label><br>
+	<input type="checkbox" id="cluttered" name="cluttered" value="cluttered">
+	<label for="cluttered">Cluttered</label><br>
+	<br>
+
+	<div class="slider">
+		<label for="myRange">On a scale of 1 to 10, rate your shopping experience on Amazon.ca:</label>
+		<br>
+		1
+		<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+		10
+	</div>
 
     <label for="comments">Any other feedback?</label>
     <br>
