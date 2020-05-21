@@ -2,17 +2,55 @@
 
 <html>
 <head>
-	<title>Website Survey - Amazon</title>
+    <title>Website Survey - Amazon</title>
 </head>
 <body>
-	<div>
-		<h1>Website Survey on Amazon</h1>
-		<a href="amazon.ca">amazon.ca</a>
-	</div>
+<div>
+    <h1>Website Survey on Amazon</h1>
+    <a href="https://www.amazon.ca/">
+        amazon.ca
+        <img src="images/amazon.PNG" alt="Amazon Website"/>
+    </a>
+</div>
+<form>
+	<br>
+    <label for="improvement">Name one improvement that you feel would make navigating Amazon.ca easier:</label>
+    <br>
+    <input type="text" id="improvement" name="improvement">
+    <br><br>
 
-	<footer>
-		Website designed by Chris Vettese.
-	</footer>
+	Which one of the following features did you find to be the most user-friendly?
+	<br>
+	<input type="radio" id="homepage" name="components" value="homepage">
+	<label for="homepage">Home Page</label><br>
+	<input type="radio" id="cart" name="components" value="cart">
+	<label for="cart">Shopping Cart</label><br>
+	<input type="radio" id="search" name="components" value="search">
+	<label for="search">Search Feature</label><br>
+	<input type="radio" id="support" name="components" value="support">
+	<label for="support">Customer Support</label><br>
+	<br>
+
+	<label for="comparison">How does the ease of use of Amazon.ca compare to other similar websites you have visited?</label>
+	<br>
+	<select name="comparison" id="comparison">
+		<option value="easier">Easier to use</option>
+		<option value="harder">Harder to use</option>
+		<option value="same">About the same</option>
+		<option value="unsure">Unsure</option>
+	</select>
+	<br><br>
+
+    <label for="comments">Any other feedback?</label>
+    <br>
+    <input type="text" id="comments" name="comments">
+    <br><br>
+
+	<button>Submit</button>
+</form>
+<footer>
+    Website designed by Chris Vettese.
+</footer>
 </body>
 
 </html>
