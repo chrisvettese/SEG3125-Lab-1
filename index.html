@@ -3,78 +3,95 @@
 <html>
 <head>
     <title>Website Survey - Amazon</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<div>
-    <h1>Website Survey on Amazon</h1>
-	View the website here:
+<div class="title-format">
+    <h1>Website Survey - Amazon</h1>
+    View the website here:
     <a href="https://www.amazon.ca/">
         amazon.ca
-		<br><br>
-        <img src="images/amazon.PNG" alt="Amazon Website"/>
+        <br><br>
+        <img src="images/amazon.PNG" alt="Amazon Website" class="image-format"/>
     </a>
 </div>
-<form>
-	<br>
-    <label for="improvement">Name one improvement that you feel would make navigating Amazon.ca easier:</label>
-    <br>
-    <input type="text" id="improvement" name="improvement">
-    <br><br>
 
-	Which one of the following features did you find to be the most user-friendly?
-	<br>
-	<input type="radio" id="homepage" name="components" value="homepage">
-	<label for="homepage">Home Page</label><br>
-	<input type="radio" id="cart" name="components" value="cart">
-	<label for="cart">Shopping Cart</label><br>
-	<input type="radio" id="search" name="components" value="search">
-	<label for="search">Search Feature</label><br>
-	<input type="radio" id="support" name="components" value="support">
-	<label for="support">Customer Support</label><br>
-	<br>
+<div class="form-format">
+    <form>
+        <br>
+        <div class="outline">
+			<label for="improvement">Name one improvement that you feel would make navigating Amazon.ca easier:</label>
+            <br><br>
+            <input type="text" id="improvement" name="improvement" class="text-box">
+        </div>
 
-	<label for="comparison">How does the ease of use of Amazon.ca compare to other similar websites you have visited?</label>
-	<br>
-	<select name="comparison" id="comparison">
-		<option value="easier">Easier to use</option>
-		<option value="harder">Harder to use</option>
-		<option value="same">About the same</option>
-		<option value="unsure">Unsure</option>
-	</select>
-	<br><br>
+        <br><br>
 
-	Please select one or more words that you would use to describe the UI of Amazon.ca:
-	<br>
-	<input type="checkbox" id="confusing" name="confusing" value="confusing">
-	<label for="confusing">Confusing</label><br>
-	<input type="checkbox" id="simple" name="simple" value="simple">
-	<label for="simple">Simple</label><br>
-	<input type="checkbox" id="inefficient" name="inefficient" value="inefficient">
-	<label for="inefficient">Inefficient</label><br>
-	<input type="checkbox" id="appealing" name="appealing" value="appealing">
-	<label for="appealing">Appealing</label><br>
-	<input type="checkbox" id="cluttered" name="cluttered" value="cluttered">
-	<label for="cluttered">Cluttered</label><br>
-	<br>
+		<div class="outline">
+			Which one of the following features did you find to be the most user-friendly?
+			<br>
+			<input type="radio" id="homepage" name="components" value="homepage">
+			<label for="homepage">Home Page</label><br>
+			<input type="radio" id="cart" name="components" value="cart">
+			<label for="cart">Shopping Cart</label><br>
+			<input type="radio" id="search" name="components" value="search">
+			<label for="search">Search Feature</label><br>
+			<input type="radio" id="support" name="components" value="support">
+			<label for="support">Customer Support</label><br>
+		</div>
 
-	<div class="slider">
-		<label for="myRange">On a scale of 1 to 10, rate your shopping experience on Amazon.ca:</label>
-		<br>
-		1
-		<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-		10
-	</div>
+        <br><br>
 
-    <label for="comments">Any other feedback?</label>
-    <br>
-    <input type="text" id="comments" name="comments">
-    <br><br>
+		<div class="outline">
+        <label for="comparison">How does the ease of use of Amazon.ca compare to other similar websites you have
+            visited?</label>
+			<br>
+			<select name="comparison" id="comparison">
+				<option value="easier">Easier to use</option>
+				<option value="harder">Harder to use</option>
+				<option value="same">About the same</option>
+				<option value="unsure">Unsure</option>
+			</select>
+		</div>
 
-	<button>Submit</button>
-</form>
-<footer>
-    Website designed by Chris Vettese.
-</footer>
+        <br><br>
+
+        Please select one or more words that you would use to describe the UI of Amazon.ca:
+        <br>
+        <input type="checkbox" id="confusing" name="confusing" value="confusing">
+        <label for="confusing">Confusing</label><br>
+        <input type="checkbox" id="simple" name="simple" value="simple">
+        <label for="simple">Simple</label><br>
+        <input type="checkbox" id="inefficient" name="inefficient" value="inefficient">
+        <label for="inefficient">Inefficient</label><br>
+        <input type="checkbox" id="appealing" name="appealing" value="appealing">
+        <label for="appealing">Appealing</label><br>
+        <input type="checkbox" id="cluttered" name="cluttered" value="cluttered">
+        <label for="cluttered">Cluttered</label><br>
+        <br>
+
+        <div class="slider">
+            <label for="myRange">Do you agree with the statement: "Amazon's delivery tracking service is well
+                designed"?</label>
+            <br>
+            Strongly disagree
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            Strongly agree
+        </div>
+
+        <label for="comments">Any other feedback?</label>
+        <br>
+        <input type="text" id="comments" name="comments">
+        <br><br>
+
+        <button>Submit</button>
+        <br><br>
+    </form>
+</div>
+<div class="footer-format">
+    <footer>
+        Website designed by Chris Vettese.
+    </footer>
+</div>
 </body>
-
 </html>

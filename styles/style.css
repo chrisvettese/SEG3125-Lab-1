@@ -1,3 +1,39 @@
+.title-format {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.image-format {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.outline {
+    border-radius: 25px;
+    border: 1.5px solid #000000;
+    margin-left: 20px;
+    padding: 20px;
+    width: 45%;
+    height: auto;
+    box-shadow: 0 3px 3px 4px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-box {
+    height: 100px;
+    width: 90%;
+}
+
+.form-format {
+    font-family: Arial, sans-serif;
+}
+
+.footer-format {
+    font-family: Arial, sans-serif;
+}
+
 .slider {
-    width: 100%; /* Width of the outside container */
+    width: 50%;
 }
